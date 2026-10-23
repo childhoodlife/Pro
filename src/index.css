@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Patrick Hand', 'Kalam', cursive;
+}
+
+.font-bengali {
+  font-family: 'Kalam', 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* 1. Vintage 90s Nostalgic Ruled School Notebook */
+.bg-vintage-nostalgia {
+  background-color: #f6efe1;
+  background-image: 
+    radial-gradient(ellipse at 50% 50%, rgba(246, 239, 225, 0.9) 0%, rgba(215, 195, 160, 0.4) 100%),
+    linear-gradient(90deg, transparent 78px, #ef4444 78px, #ef4444 80px, transparent 80px, transparent 83px, #fca5a5 83px, #fca5a5 84px, transparent 84px),
+    linear-gradient(#93c5fd 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 32px;
+}
+
+/* 2. Golden Heritage School Desk */
+.bg-golden-school {
+  background-color: #26160c;
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(245, 158, 11, 0.15) 0%, transparent 70%),
+    linear-gradient(90deg, rgba(0,0,0,0.3) 0%, transparent 20%, rgba(251, 191, 36, 0.05) 50%, transparent 80%, rgba(0,0,0,0.3) 100%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.08) 0px, rgba(0,0,0,0.08) 2px, transparent 2px, transparent 10px);
+}
+
+/* 3. Notebook lined pattern */
+.bg-notebook-ruled {
+  background-color: #faf6eb;
+  background-image: 
+    linear-gradient(90deg, transparent 79px, #f87171 79px, #f87171 81px, transparent 81px),
+    linear-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 100% 100%, 100% 32px;
+}
+
+/* 4. Notebook grid/checkered math paper */
+.bg-notebook-grid {
+  background-color: #fbf8f0;
+  background-image: 
+    linear-gradient(rgba(147, 197, 253, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 197, 253, 0.35) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* 5. Blackboard chalk texture */
+.bg-blackboard {
+  background-color: #172420;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.02) 2px, transparent 2px);
+  background-size: 20px 20px, 40px 40px;
+}
+
+/* 6. School desk wooden surface */
+.bg-wood-desk {
+  background-color: #3b2414;
+  background-image: 
+    linear-gradient(90deg, rgba(0,0,0,0.15) 0%, transparent 20%, rgba(255,255,255,0.04) 50%, transparent 80%, rgba(0,0,0,0.2) 100%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.06) 0px, rgba(0,0,0,0.06) 2px, transparent 2px, transparent 8px);
+}
+
+/* Authentic Vintage 90s In-Game Paper Overlay */
+.vintage-retro-arena {
+  position: relative;
+  box-shadow: inset 0 0 80px rgba(78, 42, 10, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.vintage-retro-arena::before {
+  content: "শৈশব ক্লাসরুম · ৯০-এর সোনালী স্মৃতি";
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-family: 'Patrick Hand', 'Kalam', cursive;
+  font-size: 13px;
+  color: rgba(180, 83, 9, 0.45);
+  pointer-events: none;
+  letter-spacing: 1px;
+  z-index: 10;
+  user-select: none;
+}
+
+/* Glowing Neon & Shimmer Animations */
+@keyframes goldPulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.3), inset 0 0 10px rgba(245, 158, 11, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.6), inset 0 0 15px rgba(245, 158, 11, 0.2);
+  }
+}
+
+.glow-gold-pulse {
+  animation: goldPulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes floatSmooth {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSmooth 4s ease-in-out infinite;
+}
+
+/* Smooth custom scrollbar for cards */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.6);
+}

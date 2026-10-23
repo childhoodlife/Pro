@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffdf8"/>
+      <stop offset="100%" stop-color="#f4eedb"/>
+    </linearGradient>
+    <linearGradient id="penBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="penRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="5" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background tile with subtle border -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="#2d1f14"/>
+  <rect x="40" y="40" width="432" height="432" rx="80" fill="url(#paperGrad)" stroke="#dcd3bd" stroke-width="3"/>
+
+  <!-- Red Margin Line -->
+  <line x1="120" y1="40" x2="120" y2="472" stroke="#f87171" stroke-width="3" stroke-opacity="0.8"/>
+  <line x1="124" y1="40" x2="124" y2="472" stroke="#f87171" stroke-width="1.5" stroke-opacity="0.5"/>
+
+  <!-- Ruled notebook lines -->
+  <g stroke="#93c5fd" stroke-width="2" stroke-opacity="0.45">
+    <line x1="40" y1="110" x2="472" y2="110"/>
+    <line x1="40" y1="160" x2="472" y2="160"/>
+    <line x1="40" y1="210" x2="472" y2="210"/>
+    <line x1="40" y1="260" x2="472" y2="260"/>
+    <line x1="40" y1="310" x2="472" y2="310"/>
+    <line x1="40" y1="360" x2="472" y2="360"/>
+    <line x1="40" y1="410" x2="472" y2="410"/>
+  </g>
+
+  <!-- Ink Splats -->
+  <path d="M 230 240 Q 210 200 230 190 Q 255 180 270 210 Q 300 220 280 250 Q 270 280 240 270 Z" fill="#1e40af" opacity="0.35"/>
+  <circle cx="295" cy="195" r="8" fill="#1e40af" opacity="0.4"/>
+  <circle cx="210" cy="270" r="6" fill="#dc2626" opacity="0.4"/>
+
+  <!-- Blue Pen (Crossed 45deg) -->
+  <g transform="translate(256, 256) rotate(-45) translate(-256, -256)" filter="url(#shadow)">
+    <!-- Pen Barrel -->
+    <rect x="238" y="110" width="36" height="260" rx="8" fill="url(#penBlue)" stroke="#1e3a8a" stroke-width="3"/>
+    <!-- Pen Grip Lines -->
+    <line x1="242" y1="310" x2="270" y2="310" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="242" y1="325" x2="270" y2="325" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="242" y1="340" x2="270" y2="340" stroke="#60a5fa" stroke-width="2"/>
+    <!-- Metal Nib Cone -->
+    <polygon points="242,370 270,370 259,415 253,415" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="253,415 259,415 256,425" fill="#0f172a"/>
+    <!-- Top Cap / Clicker -->
+    <rect x="246" y="90" width="20" height="22" rx="4" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Pen Clip -->
+    <rect x="232" y="125" width="8" height="90" rx="4" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+  </g>
+
+  <!-- Red Pen (Crossed 45deg opposite) -->
+  <g transform="translate(256, 256) rotate(45) translate(-256, -256)" filter="url(#shadow)">
+    <!-- Pen Barrel -->
+    <rect x="238" y="110" width="36" height="260" rx="8" fill="url(#penRed)" stroke="#7f1d1d" stroke-width="3"/>
+    <!-- Pen Grip Lines -->
+    <line x1="242" y1="310" x2="270" y2="310" stroke="#f87171" stroke-width="2"/>
+    <line x1="242" y1="325" x2="270" y2="325" stroke="#f87171" stroke-width="2"/>
+    <line x1="242" y1="340" x2="270" y2="340" stroke="#f87171" stroke-width="2"/>
+    <!-- Metal Nib Cone -->
+    <polygon points="242,370 270,370 259,415 253,415" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="253,415 259,415 256,425" fill="#0f172a"/>
+    <!-- Top Cap / Clicker -->
+    <rect x="246" y="90" width="20" height="22" rx="4" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Pen Clip -->
+    <rect x="272" y="125" width="8" height="90" rx="4" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Old School Pen Games",
+  "description": "Nostalgic childhood pen games including Pen Fight (কলমে কলমের যুদ্ধ) and Dots and Boxes (বক্স বানানোর খেলা) with realistic notebook & desk physics, sounds, and nostalgia melody.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

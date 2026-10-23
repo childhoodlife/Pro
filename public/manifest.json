@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Childhood Life (শৈশব জীবন)",
+  "short_name": "ChildhoodLife",
+  "description": "Childhood Life: Unique Schoolyard Pen Games, Voice Referee & Childhood Tunes.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f8f5ee",
+  "theme_color": "#2c1d11",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
